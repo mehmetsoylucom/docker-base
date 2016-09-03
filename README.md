@@ -9,7 +9,7 @@ docker attach web
 
 apt update
 
-apt install git
+apt install -y git
 
 cd ~
 
