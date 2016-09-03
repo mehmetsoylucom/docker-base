@@ -5,6 +5,8 @@ docker pull ubuntu:14.04
 
 docker run -it -d --name web ubuntu:14.04
 
+docker attach web
+
 apt update
 
 apt install git
