@@ -37,3 +37,20 @@ gem install rails
 
 # NPM
 npm install -y bower 
+
+mkdir /var/www/codes
+mkdir /var/www/codes/root
+
+rm /var/apache2/sites-enabled/*
+rm /var/apache2/sites-available/*
+
+echo '<VirtualHost *:80>' > /etc/apache2/sites-available/codes.conf 
+echo 'DocumentRoot /var/www/codes/root/public' >> /etc/apache2/sites-available/codes.conf
+echo '<Directory /var/www/codes/root/public>' >> /etc/apache2/sites-available/codes.conf
+echo 'Require all granted' >> /etc/apache2/sites-available/codes.conf
+echo 'Allow from all' >> /etc/apache2/sites-available/codes.conf
+echo 'Options -MultiViews' >> /etc/apache2/sites-available/codes.conf
+echo '</Directory>' >> /etc/apache2/sites-available/codes.conf
+echo '</VirtualHost>' >> /etc/apache2/sites-available/codes.conf
+
+service apache2 restart
