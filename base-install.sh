@@ -44,6 +44,8 @@ mkdir /var/www/codes/root
 rm /etc/apache2/sites-enabled/*
 rm /etc/apache2/sites-available/*
 
+# Virtualhost creating 
+
 echo '<VirtualHost *:80>' > /etc/apache2/sites-available/codes.conf 
 echo 'DocumentRoot /var/www/codes/root/public' >> /etc/apache2/sites-available/codes.conf
 echo 'RailsEnv development' >> /etc/apache2/sites-available/codes.conf
@@ -57,3 +59,6 @@ echo '</VirtualHost>' >> /etc/apache2/sites-available/codes.conf
 a2ensite codes.conf
 
 service apache2 restart
+
+# Rails need tmp permission
+chmod -R 777 /var/www/codes/root/tmp
