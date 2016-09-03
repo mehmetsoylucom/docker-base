@@ -19,18 +19,19 @@ bash base-install.sh
 ```
 
 Answer mysql password questions. And exit with ctrl+d from docker container. 
-
-```bash 
-mkdir /var/www/codes
-mkdir /var/www/codes/root
-```
-
+  
 Create a locally docker image for backup
 
 ```bash 
 docker commit web base14
 
 docker run -it -d -P --name base14 -v /var/www/codes/root:/var/www/codes/root base14
+```
+
+Check this command when you need docker container ip. 
+
+```bash
+docker network inspect bridge
 ```
 
 Publish path for web has public directory for rails or sinatra. ( /var/www/codes/root/public )
