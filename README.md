@@ -29,9 +29,9 @@ Create a locally docker image for backup
 
 ```bash 
 docker commit web base14
-```
 
 docker run -it -d -P --name base14 -v /var/www/codes/root:/var/www/codes/root base14
+```
 
 Don't commit your host repository files to the git remote repository after work.
 
