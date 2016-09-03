@@ -33,6 +33,8 @@ docker commit web base14
 docker run -it -d -P --name base14 -v /var/www/codes/root:/var/www/codes/root base14
 ```
 
+Publish path for web has public directory for rails or sinatra. ( /var/www/codes/root/public )
+
 Don't commit your host repository files to the git remote repository after work.
 
 Have a nice coding...
