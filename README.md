@@ -36,8 +36,6 @@ Check this command when you need docker container ip.
 docker network inspect bridge
 ```
 
-Publish path for web has public directory for rails or sinatra. ( /var/www/codes/root/public )
-
-Don't commit your host repository files to the git remote repository after work.
+Publish path is public directory in root for rails or sinatra. ( /var/www/codes/root/public in virtualhost )
 
 Have a nice coding...
