@@ -53,4 +53,6 @@ echo 'Options -MultiViews' >> /etc/apache2/sites-available/codes.conf
 echo '</Directory>' >> /etc/apache2/sites-available/codes.conf
 echo '</VirtualHost>' >> /etc/apache2/sites-available/codes.conf
 
+a2ensite codes.conf
+
 service apache2 restart
