@@ -41,8 +41,8 @@ npm install -y bower
 mkdir /var/www/codes
 mkdir /var/www/codes/root
 
-rm /var/apache2/sites-enabled/*
-rm /var/apache2/sites-available/*
+rm /etc/apache2/sites-enabled/*
+rm /etc/apache2/sites-available/*
 
 echo '<VirtualHost *:80>' > /etc/apache2/sites-available/codes.conf 
 echo 'DocumentRoot /var/www/codes/root/public' >> /etc/apache2/sites-available/codes.conf
