@@ -38,4 +38,6 @@ docker network inspect bridge
 
 Publish path is public directory in root for rails or sinatra. ( /var/www/codes/root/public in virtualhost )
 
+Do not forget. You have to install gems with bundler in docker container. 
+
 Have a nice coding...
