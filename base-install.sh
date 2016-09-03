@@ -46,6 +46,7 @@ rm /etc/apache2/sites-available/*
 
 echo '<VirtualHost *:80>' > /etc/apache2/sites-available/codes.conf 
 echo 'DocumentRoot /var/www/codes/root/public' >> /etc/apache2/sites-available/codes.conf
+echo 'RailsEnv development' >> /etc/apache2/sites-available/codes.conf
 echo '<Directory /var/www/codes/root/public>' >> /etc/apache2/sites-available/codes.conf
 echo 'Require all granted' >> /etc/apache2/sites-available/codes.conf
 echo 'Allow from all' >> /etc/apache2/sites-available/codes.conf
