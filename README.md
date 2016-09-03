@@ -30,7 +30,7 @@ docker commit web base14
 docker run -it -d -P --name base14 -v /var/www/codes/root:/var/www/codes/root base14
 ```
 
-Check this command when you need docker container ip. 
+Use this command in host when you need docker container ip. 
 
 ```bash
 docker network inspect bridge
