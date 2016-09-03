@@ -17,7 +17,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CA
 sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list'
 sudo apt-get update
 sudo apt-get install -y --force-yes libapache2-mod-passenger && sudo a2enmod passenger
-sudo apt-get install -y --force-yes git tig ssh vim
+sudo apt-get install -y --force-yes git tig ssh vim tmux zsh
 sudo apt-get install -y --force-yes ruby2.3 ruby2.3-dev 
 sudo apt-get install -y --force-yes python3 python-pip 
 sudo apt-get install -y --force-yes nodejs npm 
